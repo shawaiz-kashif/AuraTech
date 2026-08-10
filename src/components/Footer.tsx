@@ -1,6 +1,6 @@
 const socialIcons = ["twitter", "facebook-f", "youtube", "linkedin-in", "instagram"];
 
-const companyLinks = ["About us", "Portfolio", "Blog", "Contact Us", "Faqs", "Privacy & Policy"];
+const companyLinks = ["About us", "Portfolio", "Contact Us", "Faqs", "Privacy & Policy"];
 
 const serviceLinks = [
   "Hire Dedicated Developers",

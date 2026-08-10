@@ -6,7 +6,6 @@ import Portfolio from "@/components/app-development/Portfolio";
 import Technologies from "@/components/Technologies";
 import Testimonials from "@/components/app-development/Testimonials";
 import AppDownload from "@/components/app-development/AppDownload";
-import Blog from "@/components/Blog";
 import Contact from "@/components/app-development/Contact";
 import Locations from "@/components/app-development/Locations";
 import Footer from "@/components/Footer";
@@ -22,7 +21,6 @@ export default function AppDevelopment() {
       <Technologies />
       <Testimonials />
       <AppDownload />
-      <Blog className="half-bg-ree sec-pad" />
       <Contact />
       <Locations />
       <Footer />

@@ -151,15 +151,6 @@ export default function Header({ dark = true }: { dark?: boolean }) {
                 </div>
               </li>
               <li className="megamenu mega-small">
-                <a href="#" className="menu-links">Blogs</a>
-                <div className="menu-dropdown">
-                  <div className="menu-block-set">
-                    <a className="dropdown-item" href="#blog">Blog Page</a>
-                    <a className="dropdown-item" href="#blog">Blog Details</a>
-                  </div>
-                </div>
-              </li>
-              <li className="megamenu mega-small">
                 <a href="#" className="menu-links">Contact Us</a>
                 <div className="menu-dropdown">
                   <div className="menu-block-set">
@@ -249,13 +240,6 @@ export default function Header({ dark = true }: { dark?: boolean }) {
                   <li><a href="#portfolio">Portfolio 4 Grid</a></li>
                   <li><a href="#portfolio">Portfolio Details</a></li>
                   <li><a href="#portfolio">Portfolio Details - 2</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#blog">Blogs</a>
-                <ul>
-                  <li><a href="#blog">Blog Page</a></li>
-                  <li><a href="#blog">Blog Details</a></li>
                 </ul>
               </li>
               <li>

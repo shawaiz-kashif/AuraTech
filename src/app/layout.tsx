@@ -19,6 +19,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className="no-js" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#e8f1ff" />
+        <link href="/css/preloader.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap"

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function Preloader() {
   const [visible, setVisible] = useState(true);
@@ -20,18 +19,18 @@ export default function Preloader() {
 
   return (
     <div className="onloadpage" id="page-load">
-      <div className="loader-div">
-        <div className="on-img">
-          <Image
-            src="/images/loader.gif"
-            alt="Logo"
-            className="img-fluid"
-            width={80}
-            height={80}
-            unoptimized
-            priority
-          />
-          <span>Loading Please Wait...</span>
+      <div className="aura-preloader">
+        <div className="stage">
+          <div className="rig">
+            <div className="layer layer-ink"></div>
+            <div className="layer layer-orange"></div>
+            <div className="sheen"></div>
+          </div>
+        </div>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
         </div>
       </div>
     </div>
