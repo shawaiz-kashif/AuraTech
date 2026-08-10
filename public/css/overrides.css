@@ -1,0 +1,137 @@
+/* Smooth scroll for in-page nav (Home/Portfolio/Blogs/Contact links, the
+   "View Portfolio"/"View All Work" CTAs, etc.) - covers both directions
+   since it applies to any anchor jump regardless of scroll direction. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* fixed header is 85px tall - keep anchored sections clear of it */
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Accessibility & performance fixes layered on top of the ported Reevan
+   template stylesheets. Loaded last so these rules win the cascade.
+
+   Scope note: an automated contrast scan flagged many "text on #ffffff"
+   findings, but this page is dark-themed throughout (verified real
+   ancestor background: rgb(11,11,15), not white) — those were false
+   positives from the scanner defaulting to white when it couldn't
+   resolve a bg color up the tree, and are left untouched to preserve
+   the licensed template's brand palette. Only combinations verified
+   against their REAL rendered background are fixed below.
+   --------------------------------------------------------------------- */
+
+/* Solid orange CTA buttons: white text on #ff5b2e was 3.09:1 (needs 4.5:1).
+   Self-contained failure regardless of section theme - genuine fix. */
+.ree-btn-grdt1 {
+  background: #cc4925;
+  border-color: #cc4925;
+}
+.ree-btn-grdt1:hover {
+  color: #cc4925;
+}
+
+/* Header "Request Quote" pill: orange text on a real white background,
+   3.09:1 (needs 4.5:1). Genuine fix. */
+.ree-btn-grdt2 {
+  color: #cc4925;
+  border-color: #cc4925;
+}
+.ree-btn-grdt2:hover {
+  background: #cc4925;
+  border-color: #cc4925;
+}
+
+/* Cramped padding: .icon-with-title had 0 horizontal padding, so labels
+   sit flush against the box edges (Technologies section). */
+.icon-with-title {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Service card kicker badges: orange text on a self-contained light-peach
+   background, 2.4:1 (needs 4.5:1). #cc4925 (used elsewhere) only reaches
+   3.6:1 against this lighter #ffdbca bg, so this badge needs a deeper shade. */
+.sub-heading2 {
+  color: #a63b1e;
+}
+
+/* owl.carousel's autoHeight option animates the `height` property directly,
+   which causes layout thrash (forces reflow every frame). Snap instead of
+   animating - carousels still resize correctly, just without the tween. */
+.owl-height {
+  transition: none;
+}
+
+/* Footer logo: the original footer-logo.png was small enough to need no
+   explicit size (unlike the header logo, constrained to 230px by
+   responsive.css). The AuraTech logo's native size is much larger, so it
+   needs the same kind of cap here. */
+.footer-logo img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+/* Stats badge on light-theme pages (app-development): white text directly
+   on the base #ff5b2e background, 3.09:1 (needs 4.5:1). Scoped away from
+   .dark-light-a (the homepage's dark variant, already fine as-is). */
+.quick-key-points:not(.dark-light-a) {
+  background: #cc4925;
+}
+
+/* Mobile off-canvas nav level titles ("Reevan Menu", "Home", "Portfolio"...):
+   the hc-offcanvas-nav plugin applies this orange background via inline
+   style at runtime, so it needs !important to win over that. White text on
+   it was 3.09:1 (needs 4.5:1). Genuine, self-contained fix. */
+.nav-title,
+.level-title {
+  background: #cc4925 !important;
+}
+
+/* Heading hierarchy helpers -------------------------------------------- */
+
+/* Standard visually-hidden pattern: present for screen readers/heading
+   navigation, removed from visual flow. Used to bridge heading levels
+   the design has no visible spot for, with zero visual change. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Demoted former-heading text: keeps the exact visual size/weight/color of
+   the h4/h5 it replaced (verified via computed styles) so nothing shifts. */
+.demoted-h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #fcfcfd;
+}
+.demoted-h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fcfcfd;
+}
+/* Light-section variant (e.g. app-development page): base heading color is
+   #30303c there, not the off-white used on dark-bg sections. */
+.demoted-h4-light {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #30303c;
+}
+.demoted-h5-light {
+  font-size: 20px;
+  font-weight: 600;
+  color: #30303c;
+}
