@@ -18,7 +18,7 @@ export default function Hero() {
                 Creativity Can Light Your Brand
               </h1>
               <p data-aos="fade-in" data-aos-delay="500">
-                Reevan solve the world&apos;s biggest problems with Expertise. Reevan helps
+                AuraTech solve the world&apos;s biggest problems with Expertise. AuraTech helps
                 global brand with digital products on web, mobile and connected platforms.
               </p>
               <div className="btn-sets2 vcenter mt20" data-aos="fade-in" data-aos-delay="1100">

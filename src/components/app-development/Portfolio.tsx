@@ -63,7 +63,7 @@ export default function Portfolio() {
                 <div className="fwb-main-x fwb-a" key={i}>
                   <div className="work-thumbnails">
                     <a href="#portfolio">
-                      <img src={it.img} alt="portfolio reevan" className="img-fluid" loading="lazy" />
+                      <img src={it.img} alt="portfolio auratech" className="img-fluid" loading="lazy" />
                     </a>
                   </div>
                   <div className="work-details">

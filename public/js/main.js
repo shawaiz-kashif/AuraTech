@@ -18,7 +18,7 @@
     disableAt: false,
     customToggle: '.toggle',
     levelSpacing: 40,
-    navTitle: 'Reevan Menu',  
+    navTitle: 'AuraTech Menu',
     levelTitles: true,
     labelClose: false,
     levelTitleAsBack: true,   

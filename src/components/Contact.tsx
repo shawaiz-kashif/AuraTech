@@ -39,14 +39,14 @@ export default function Contact() {
               <div className="contact-infos mt35">
                 <div className="c-infot">
                   <span>Software Department</span>
-                  <a href="mailto:reevan@abc.com">
-                    <i className="fas fa-envelope"></i> reevan@abc.com
+                  <a href="mailto:info@auratech-solutions.com">
+                    <i className="fas fa-envelope"></i> info@auratech-solutions.com
                   </a>
                 </div>
                 <div className="c-infot">
                   <span>Connect on Skype</span>
-                  <a href="skype:reevan.company">
-                    <i className="fab fa-skype"></i> reevan.company
+                  <a href="skype:auratech.solutions">
+                    <i className="fab fa-skype"></i> auratech.solutions
                   </a>
                 </div>
               </div>
@@ -109,7 +109,7 @@ export default function Contact() {
                       defaultChecked
                     />
                     <label className="custom-control-label label-f-form" htmlFor="customCheck">
-                      I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Reevan.
+                      I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of AuraTech.
                     </label>
                   </div>
                   <div className="fieldsets mt20">

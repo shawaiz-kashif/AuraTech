@@ -9,19 +9,19 @@ const services = [
   {
     icon: "/images/icons/apple.svg",
     title: "iOS Development",
-    desc: "At Reevan, We offer pixel perfect responsive website design services which are built around aesthetics and usability.",
+    desc: "At AuraTech, We offer pixel perfect responsive website design services which are built around aesthetics and usability.",
     delay: "300",
   },
   {
     icon: "/images/icons/cube.svg",
     title: "Hybrid App Development",
-    desc: "Reevan’s product design services cover entire product design lifecycle, From prototyping to fully functional design.",
+    desc: "AuraTech’s product design services cover entire product design lifecycle, From prototyping to fully functional design.",
     delay: "500",
   },
   {
     icon: "/images/icons/smartwatch.svg",
     title: "Wearable Development",
-    desc: "Increase conversions. Increase leads. Increase sales. Increase revenue. That's digital marketing services from Reevan.",
+    desc: "Increase conversions. Increase leads. Increase sales. Increase revenue. That's digital marketing services from AuraTech.",
     delay: "700",
   },
   {
@@ -45,7 +45,7 @@ export default function Services() {
         <div className="row">
           <div className="col-lg-12">
             <div className="sec-heading text-center">
-              <span className="sub-heading mb15">Reevan Services</span>
+              <span className="sub-heading mb15">AuraTech Services</span>
               <h2>
                 We build modern <span className="ree-text rt40">creative</span>{" "}
                 <span className="ree-text rt40">mobile</span> experiences.

@@ -27,7 +27,7 @@ export default function Footer() {
                     <img src="/AuraTechlogo.png" alt="AuraTech" className="img" loading="lazy" />
                   </a>
                 </div>
-                <p className="mt15">Overall client rating is 4.9 out of 8,500 Clients for Reevan</p>
+                <p className="mt15">Overall client rating is 4.9 out of 8,500 Clients for AuraTech</p>
                 <ul className="footer_social mt30">
                   {socialIcons.map((icon) => (
                     <li key={icon}>
@@ -56,18 +56,18 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:career@reevan.com">
-                    <span><i className="fas fa-envelope"></i></span> career@reevan.com
+                  <a href="mailto:career@auratech-solutions.com">
+                    <span><i className="fas fa-envelope"></i></span> career@auratech-solutions.com
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:info@reevan.com">
-                    <span><i className="fas fa-envelope"></i></span> info@reevan.com
+                  <a href="mailto:info@auratech-solutions.com">
+                    <span><i className="fas fa-envelope"></i></span> info@auratech-solutions.com
                   </a>
                 </li>
                 <li>
-                  <a href="skype:reevan.company">
-                    <span><i className="fab fa-skype"></i></span> reevan-skype
+                  <a href="skype:auratech.solutions">
+                    <span><i className="fab fa-skype"></i></span> auratech-skype
                   </a>
                 </li>
               </ul>
@@ -114,7 +114,7 @@ export default function Footer() {
             <div className="col-lg-7">
               <div className="ft-copyright ft-r">
                 <p>
-                  Copyright © {new Date().getFullYear()} Reevan. All rights reserved. Template By{" "}
+                  Copyright © {new Date().getFullYear()} AuraTech. All rights reserved. Template By{" "}
                   <a href="https://themeforest.net/user/rajesh-doot/portfolio" target="_blank" rel="noreferrer">
                     Rajesh Doot
                   </a>

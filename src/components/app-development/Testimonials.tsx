@@ -8,36 +8,36 @@ const clientLogos = [1, 2, 3, 4, 5, 6];
 const reviews = [
   {
     quote:
-      "“Reevan build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
-    body: "I am delighted with our new website. A1 service and design by Reevan. You can go with the Web Design Company, and I 100% recommend them to anyone. The perfect company to go to for your ideal website and digital marketing.",
+      "“AuraTech build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
+    body: "I am delighted with our new website. A1 service and design by AuraTech. You can go with the Web Design Company, and I 100% recommend them to anyone. The perfect company to go to for your ideal website and digital marketing.",
     name: "Anne Fibbiyon",
     location: "Jaipur, Rajasthan",
   },
   {
     quote:
-      "“Reevan build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
-    body: "I was facing multiple issues with my old website and that i discovered reevan. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.",
+      "“AuraTech build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
+    body: "I was facing multiple issues with my old website and that i discovered AuraTech. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.",
     name: "Mayank Jhalana",
     location: "Ajamer, Rajasthan",
   },
   {
     quote:
-      "“Reevan build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
-    body: "I was facing multiple issues with my old website and that i discovered reevan. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.",
+      "“AuraTech build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
+    body: "I was facing multiple issues with my old website and that i discovered AuraTech. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.",
     name: "Eric Shun",
     location: "Nagpur, India",
   },
   {
     quote:
-      "“Reevan build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
-    body: "I was facing multiple issues with my old website and that i discovered reevan. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.",
+      "“AuraTech build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
+    body: "I was facing multiple issues with my old website and that i discovered AuraTech. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.",
     name: "Gene Jacket",
     location: "Tuklic, UK",
   },
   {
     quote:
-      "“Reevan build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
-    body: "I was facing multiple issues with my old website and that i discovered reevan. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.",
+      "“AuraTech build my startup business a great website that really helps current and potential customers get a good feel for my company.”",
+    body: "I was facing multiple issues with my old website and that i discovered AuraTech. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.",
     name: "Marion Gaze",
     location: "Olivia, USA",
   },

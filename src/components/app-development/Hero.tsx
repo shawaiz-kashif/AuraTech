@@ -18,7 +18,7 @@ export default function Hero() {
                 Top Mobile App Development Company in India
               </h1>
               <p className="zup" data-aos="fade-in" data-aos-delay="500">
-                Reevan solve the world&apos;s biggest problems with Expertise. Reevan helps
+                AuraTech solve the world&apos;s biggest problems with Expertise. AuraTech helps
                 global brand with digital products on web, mobile and connected platforms.
               </p>
 

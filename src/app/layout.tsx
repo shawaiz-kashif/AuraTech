@@ -6,9 +6,9 @@ import BodyThemeClass from "@/components/BodyThemeClass";
 import { BODY_THEME } from "@/lib/pageThemes";
 
 export const metadata: Metadata = {
-  title: "Reevan - Web Design & Digital Marketing Agency",
-  description: "Creative Agency, Marketing Agency Template",
-  keywords: "Creative Agency, Marketing Agency",
+  title: "AuraTech - Software & Hardware Solutions",
+  description: "AuraTech Software & Hardware Solutions",
+  keywords: "Software Solutions, Hardware Solutions, App Development, Web Design",
   manifest: "/site.webmanifest",
   // favicon.ico and apple-icon.png in src/app are picked up automatically
   // by Next.js's file-based icon convention.

@@ -26,7 +26,7 @@ export default function Portfolio() {
             <div className={`${it.col} mt40 img-hover`} key={i}>
               <div className="work-thumbnail">
                 <a href="#">
-                  <img src={it.img} alt="portfolio reevan" className="img-fluid" loading="lazy" />
+                  <img src={it.img} alt="portfolio auratech" className="img-fluid" loading="lazy" />
                 </a>
               </div>
               <div className="port-title mt20">

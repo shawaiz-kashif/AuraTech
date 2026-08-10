@@ -20,7 +20,7 @@ export default function About() {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="about-content-home m-mb60 text-center">
-              <span className="sub-heading mb15">We Are Reevan</span>
+              <span className="sub-heading mb15">We Are AuraTech</span>
               <h2 className="mb15">
                 <span className="ree-text rt40">Award</span> Winning Creative Agency.
               </h2>
@@ -28,7 +28,7 @@ export default function About() {
                 #1 Mobile App Company, Awarded for its Top Features/Editor Apps Delivered.
               </p>
               <p>
-                Reevan started its operation in the year 1999. We are Worldwide, based Web, App
+                AuraTech started its operation in the year 1999. We are Worldwide, based Web, App
                 and Digital Marketing Company. Our main Domain is Web Design, App Development,
                 Digital Marketing, Product Design and Cloud Services. Customer Satisfaction and
                 the Highest rate of Customer Repeatability make us one of the pioneers in the
@@ -48,7 +48,7 @@ export default function About() {
               <div className="ree-app-st-a flx-end m-order2">
                 <div className="btnctm">
                   <a href="#about" className="ree-btn ree-btn-grdt3 mw-80 m-mt30">
-                    Know More Reevan <i className="fas fa-arrow-right fa-btn"></i>
+                    Know More AuraTech <i className="fas fa-arrow-right fa-btn"></i>
                   </a>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function About() {
                       <img src="/AuraTechlogo.png" alt="AuraTech logo" className="logo-anim" loading="lazy" />
                       <img
                         src="/images/others/app-development.webp"
-                        alt="reevan logo"
+                        alt="AuraTech logo"
                         className="circle-anim"
                         loading="lazy"
                       />
