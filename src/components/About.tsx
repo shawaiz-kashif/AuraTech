@@ -1,40 +1,31 @@
 const stats = [
-  { value: "7500", suffix: "+", label: "Project Delivered" },
-  { value: "3500", suffix: "+", label: "Enterprise Clients" },
-  { value: "540", suffix: "+", label: "Experts Team" },
-  { value: "20", suffix: "%", label: "Success Years" },
-];
-
-const awards = [
-  { logo: "/images/brand-logo/top-it.png", label: "Top App Developer Genuine Quality" },
-  { logo: "/images/brand-logo/appfutura-logo.png", label: "Top App Developer Genuine Quality" },
-  { logo: "/images/brand-logo/goodfirm-logo.png", label: "Top App Developer Genuine Quality" },
-  { logo: "/images/brand-logo/clutch-logo.png", label: "Top App Developer Genuine Quality" },
-  { logo: "/images/brand-logo/mobile-app-logo.png", label: "Top App Developer Genuine Quality" },
+  { value: "40", suffix: "+", label: "Projects Delivered" },
+  { value: "15", suffix: "+", label: "Enterprise Clients" },
+  { value: "12", suffix: "+", label: "Team Members" },
+  { value: "5", suffix: "+", label: "Years of Experience" },
 ];
 
 export default function About() {
   return (
-    <section className="home-about sec-pad dark-bg" id="about">
+    <section className="home-about sec-pad r-bg-a" id="about">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="about-content-home m-mb60 text-center">
               <span className="sub-heading mb15">We Are AuraTech</span>
               <h2 className="mb15">
-                <span className="ree-text rt40">Award</span> Winning Creative Agency.
+                Your <span className="ree-text rt40">Software &amp; Hardware</span> Solutions Partner
               </h2>
-              <p className="mb15 demoted-h4">
-                #1 Mobile App Company, Awarded for its Top Features/Editor Apps Delivered.
+              <p className="mb15 demoted-h4-light">
+                From custom applications to the infrastructure they run on — we cover the full
+                stack.
               </p>
               <p>
-                AuraTech started its operation in the year 1999. We are Worldwide, based Web, App
-                and Digital Marketing Company. Our main Domain is Web Design, App Development,
-                Digital Marketing, Product Design and Cloud Services. Customer Satisfaction and
-                the Highest rate of Customer Repeatability make us one of the pioneers in the
-                field. So, what are you waiting for? Let us discuss your ideas and our
-                innovation in detail because catering your requirement and converting it into a
-                final product is our main goal.
+                AuraTech is a software and hardware solutions company. We build custom web,
+                mobile, and software applications, integrate enterprise systems like EDI and
+                warehouse management, and manage the servers, networking, and infrastructure that
+                keep it all running. From development through deployment to day-to-day IT
+                support, we handle the technology so you can focus on your business.
               </p>
             </div>
           </div>
@@ -53,7 +44,7 @@ export default function About() {
                 </div>
               </div>
               <div className="ree-app-st-b m-order1">
-                <div className="quick-key-points dark-light-a">
+                <div className="quick-key-points">
                   <div className="key-highlights">
                     {stats.map((s) => (
                       <div className="key-highlt-b" key={s.label}>
@@ -68,30 +59,15 @@ export default function About() {
                     <div className="animated-logo">
                       <img src="/AuraTechlogo.png" alt="AuraTech logo" className="logo-anim" loading="lazy" />
                       <img
-                        src="/images/others/app-development.webp"
-                        alt="AuraTech logo"
+                        src="/images/others/ring-text.svg"
+                        alt=""
+                        aria-hidden="true"
                         className="circle-anim"
                         loading="lazy"
                       />
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container mt60">
-          <div className="row justify-content-center">
-            <div className="col-md-12">
-              <div className="app-awards owl-carousesl">
-                {awards.map((a) => (
-                  <div className="award-achivt" key={a.logo}>
-                    <a href="#">
-                      <img src={a.logo} alt="top it" className="img-fluid" loading="lazy" />
-                    </a>
-                    <p>{a.label}</p>
-                  </div>
-                ))}
               </div>
             </div>
           </div>

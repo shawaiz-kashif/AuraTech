@@ -1,3 +1,9 @@
+/* Remove the highlighter-underline bar under .ree-text/.rt40 keyword spans
+   (e.g. "Award", "Finest", "Touch") - not wanted on this site. */
+.ree-text:after {
+  content: none;
+}
+
 /* Smooth scroll for in-page nav (Home/Portfolio/Blogs/Contact links, the
    "View Portfolio"/"View All Work" CTAs, etc.) - covers both directions
    since it applies to any anchor jump regardless of scroll direction. */
@@ -16,12 +22,10 @@ html {
    template stylesheets. Loaded last so these rules win the cascade.
 
    Scope note: an automated contrast scan flagged many "text on #ffffff"
-   findings, but this page is dark-themed throughout (verified real
-   ancestor background: rgb(11,11,15), not white) — those were false
-   positives from the scanner defaulting to white when it couldn't
-   resolve a bg color up the tree, and are left untouched to preserve
-   the licensed template's brand palette. Only combinations verified
-   against their REAL rendered background are fixed below.
+   findings; some were false positives from the scanner defaulting to
+   white when it couldn't resolve a bg color up the tree (verified
+   against real rendered backgrounds at the time). Only combinations
+   verified against their REAL rendered background are fixed below.
    --------------------------------------------------------------------- */
 
 /* Solid orange CTA buttons: white text on #ff5b2e was 3.09:1 (needs 4.5:1).
@@ -43,6 +47,18 @@ html {
 .ree-btn-grdt2:hover {
   background: #cc4925;
   border-color: #cc4925;
+}
+
+/* "Know More AuraTech" outline button: default (non-dark-bg) state is
+   transparent bg + #fcfcfd (near-white) text/border, illegible against the
+   site's light sections. Give it a dark, on-brand outline instead. */
+.ree-btn-grdt3 {
+  color: #cc4925;
+  border-color: #cc4925;
+}
+.ree-btn-grdt3:hover {
+  color: #fff;
+  background: #cc4925;
 }
 
 /* Cramped padding: .icon-with-title had 0 horizontal padding, so labels

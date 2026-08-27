@@ -1,16 +1,8 @@
 const stats = [
-  { value: "7500", suffix: "+", label: "Project Delivered" },
-  { value: "3500", suffix: "+", label: "Enterprise Clients" },
-  { value: "540", suffix: "+", label: "Experts Team" },
-  { value: "20", suffix: "%", label: "Success Years" },
-];
-
-const awards = [
-  { logo: "/images/brand-logo/top-it.png", label: "Top App Developer Genuine Quality" },
-  { logo: "/images/brand-logo/appfutura-logo.png", label: "Top App Developer Genuine Quality" },
-  { logo: "/images/brand-logo/goodfirm-logo.png", label: "Top App Developer Genuine Quality" },
-  { logo: "/images/brand-logo/clutch-logo.png", label: "Top App Developer Genuine Quality" },
-  { logo: "/images/brand-logo/mobile-app-logo.png", label: "Top App Developer Genuine Quality" },
+  { value: "40", suffix: "+", label: "Projects Delivered" },
+  { value: "15", suffix: "+", label: "Enterprise Clients" },
+  { value: "12", suffix: "+", label: "Team Members" },
+  { value: "5", suffix: "+", label: "Years of Experience" },
 ];
 
 export default function About() {
@@ -22,19 +14,17 @@ export default function About() {
             <div className="about-content-home m-mb60 text-center">
               <span className="sub-heading mb15">We Are AuraTech</span>
               <h2 className="mb15">
-                <span className="ree-text rt40">Award</span> Winning App Development Company
+                Apps Built <span className="ree-text rt40">Right</span>, From Design to Deployment
               </h2>
               <p className="mb15 demoted-h4-light">
-                #1 Mobile App Company, Awarded for its Top Features/Editor Apps Delivered.
+                Native, cross-platform, and web apps — backed by the same team that builds and
+                supports your backend infrastructure.
               </p>
               <p>
-                AuraTech started its operation in the year 1999. We are Worldwide, based Web, App
-                and Digital Marketing Company. Our main Domain is Web Design, App Development,
-                Digital Marketing, Product Design and Cloud Services. Customer Satisfaction and
-                the Highest rate of Customer Repeatability make us one of the pioneers in the
-                field. So, what are you waiting for? Let us discuss your ideas and our
-                innovation in detail because catering your requirement and converting it into a
-                final product is our main goal.
+                AuraTech&apos;s app development team handles the full lifecycle: architecture,
+                UI/UX, native and cross-platform builds, API and backend integration, and
+                deployment. Because we also manage servers, networking, and enterprise systems
+                in-house, your app doesn&apos;t just launch — it stays supported.
               </p>
             </div>
           </div>
@@ -68,30 +58,15 @@ export default function About() {
                     <div className="animated-logo">
                       <img src="/AuraTechlogo.png" alt="AuraTech logo" className="logo-anim" loading="lazy" />
                       <img
-                        src="/images/others/app-development.webp"
-                        alt="AuraTech logo"
+                        src="/images/others/ring-text.svg"
+                        alt=""
+                        aria-hidden="true"
                         className="circle-anim"
                         loading="lazy"
                       />
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container mt60">
-          <div className="row justify-content-center">
-            <div className="col-md-12">
-              <div className="app-awards owl-carousesl">
-                {awards.map((a) => (
-                  <div className="award-achivt" key={a.logo}>
-                    <a href="#">
-                      <img src={a.logo} alt="top it" className="img-fluid" loading="lazy" />
-                    </a>
-                    <p>{a.label}</p>
-                  </div>
-                ))}
               </div>
             </div>
           </div>

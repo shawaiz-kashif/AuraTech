@@ -2,38 +2,38 @@ const services = [
   {
     icon: "/images/icons/android.svg",
     title: "Android Development",
-    desc: "Our software house has been recognised by google for outstanding android application quality.",
+    desc: "Native Android apps built with modern architecture, from first prototype to Play Store release.",
     imgClass: "ree-card-img shadows",
     delay: "100",
   },
   {
     icon: "/images/icons/apple.svg",
     title: "iOS Development",
-    desc: "At AuraTech, We offer pixel perfect responsive website design services which are built around aesthetics and usability.",
+    desc: "Native iOS apps built for App Store guidelines and long-term maintainability, not just launch day.",
     delay: "300",
   },
   {
     icon: "/images/icons/cube.svg",
     title: "Hybrid App Development",
-    desc: "AuraTech’s product design services cover entire product design lifecycle, From prototyping to fully functional design.",
+    desc: "Cross-platform apps with Flutter and React Native — one codebase, native performance on iOS and Android.",
     delay: "500",
   },
   {
     icon: "/images/icons/smartwatch.svg",
-    title: "Wearable Development",
-    desc: "Increase conversions. Increase leads. Increase sales. Increase revenue. That's digital marketing services from AuraTech.",
+    title: "Machine Learning & Training",
+    desc: "Custom ML features built into your app, plus hands-on training to bring your team up to speed.",
     delay: "700",
   },
   {
     icon: "/images/icons/ux-interface.svg",
     title: "UI/UX Designing",
-    desc: "Our highly experienced designers comprehend your vision and business objectives in order to create the designs.",
+    desc: "Interfaces designed around how people actually use your product, not just how it looks in a mockup.",
     delay: "900",
   },
   {
     icon: "/images/icons/app-development.svg",
     title: "Web App Development",
-    desc: "Our highly experienced designers comprehend your vision and business objectives in order to create the designs.",
+    desc: "Full-stack web applications — frontend, backend, and the APIs that connect them.",
     delay: "1100",
   },
 ];
@@ -47,8 +47,7 @@ export default function Services() {
             <div className="sec-heading text-center">
               <span className="sub-heading mb15">AuraTech Services</span>
               <h2>
-                We build modern <span className="ree-text rt40">creative</span>{" "}
-                <span className="ree-text rt40">mobile</span> experiences.
+                We build <span className="ree-text rt40">apps</span> people actually use.
               </h2>
             </div>
           </div>
@@ -62,13 +61,13 @@ export default function Services() {
                 </div>
                 <div className="ree-card-content mt40">
                   <h3 className="mb15">
-                    <a href="#services">{s.title}</a>
+                    <a href="/contact">{s.title}</a>
                   </h3>
                   <p>{s.desc}</p>
                 </div>
                 <div className="ree-card-content-link">
-                  <a href="#services" className="ree-card-link mt40">
-                    Read More <i className="fas fa-arrow-right fa-btn"></i>
+                  <a href="/contact" className="ree-card-link mt40">
+                    Get In Touch <i className="fas fa-arrow-right fa-btn"></i>
                   </a>
                 </div>
               </div>
@@ -80,10 +79,10 @@ export default function Services() {
             <div className="col-lg-10 vcenter">
               <div className="cta-heading-wide-bt">
                 <h3>
-                  Hire World-Class <span className="ree-text rt40">Developers</span>
+                  Ready to Build Your <span className="ree-text rt40">App</span>?
                 </h3>
-                <a href="#contact" className="ree-btn ree-btn-grdt1 mw-80">
-                  Hire Now <i className="fas fa-arrow-right fa-btn"></i>
+                <a href="/contact" className="ree-btn ree-btn-grdt1 mw-80">
+                  Get In Touch <i className="fas fa-arrow-right fa-btn"></i>
                 </a>
               </div>
             </div>

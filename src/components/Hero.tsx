@@ -15,11 +15,12 @@ export default function Hero() {
           <div className="col-lg-6 vcenter">
             <div className="hero-content-a zup">
               <h1 className="h1 mb30" data-aos="fade-in" data-aos-delay="200">
-                Creativity Can Light Your Brand
+                Software & Hardware Solutions, Built to Run Your Business
               </h1>
               <p data-aos="fade-in" data-aos-delay="500">
-                AuraTech solve the world&apos;s biggest problems with Expertise. AuraTech helps
-                global brand with digital products on web, mobile and connected platforms.
+                AuraTech designs and builds custom software, integrates enterprise systems, and
+                keeps the infrastructure behind it running — from web and mobile applications to
+                server racks, networking, and IT support.
               </p>
               <div className="btn-sets2 vcenter mt20" data-aos="fade-in" data-aos-delay="1100">
                 <a href="#portfolio" className="ree-btn ree-btn-grdt1 no-shadows mw-80 mr20 mt20">

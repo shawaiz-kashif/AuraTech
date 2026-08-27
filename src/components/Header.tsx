@@ -1,4 +1,4 @@
-export default function Header({ dark = true }: { dark?: boolean }) {
+export default function Header({ dark = false }: { dark?: boolean }) {
   return (
     <header className={dark ? "header-dark ree-header fixed-top" : "ree-header fixed-top"}>
       <div className="container-fluid m-p-l-r-0">
@@ -8,7 +8,7 @@ export default function Header({ dark = true }: { dark?: boolean }) {
               <a className="nav-brand" href="/">
                 {dark ? (
                   <>
-                    <img src="/AuraTechlogo.png" alt="AuraTech" className="ree-logo l-dark" />
+                    <img src="/AuraTechlogo-dark.png" alt="AuraTech" className="ree-logo l-dark" />
                     <img src="/AuraTechlogo.png" alt="AuraTech" className="ree-logo l-white" />
                   </>
                 ) : (
@@ -19,16 +19,19 @@ export default function Header({ dark = true }: { dark?: boolean }) {
           </div>
           <div className="ree-nav" role="navigation">
             <ul className="nav-list">
+              <li>
+                <a href="/" className="menu-links">Home</a>
+              </li>
               <li className="megamenu">
-                <a href="#" className="menu-links">Home</a>
+                <a href="#" className="menu-links">Services</a>
                 <div className="menu-dropdown">
                   <div className="menu-block-set">
                     <div className="container">
                       <div className="menu-block-a">
                         <div className="mega-menu-blocks">
-                          <p className="mb10">Need a Website?</p>
-                          <p className="demoted-h4">We Will Shape Your Brand With Our Digital Solutions</p>
-                          <a href="#contact" className="ree-btn ree-btn0 ree-btn-grdt2 mt30">
+                          <p className="mb10">Need a Solution?</p>
+                          <p className="demoted-h4">Software &amp; Hardware Solutions Built Around Your Business</p>
+                          <a href="/contact" className="ree-btn ree-btn0 ree-btn-grdt2 mt30">
                             {" "}
                             Request Quote <i className="fas fa-arrow-right fa-btn"></i>
                           </a>
@@ -36,38 +39,24 @@ export default function Header({ dark = true }: { dark?: boolean }) {
                         <div className="mega-menu-blocks">
                           <div className="menu-inner-block-a">
                             <div className="inner-blockss">
-                              <label className="menu-headings">Multi-Page Demo</label>
+                              <label className="menu-headings">Development</label>
                               <ul className="menu-li-link">
-                                <li><a href="/app-development">App Development</a></li>
-                                <li><a href="/">Creative Agency</a></li>
-                                <li><a href="#">Digital Agency</a></li>
-                                <li><a href="#">Graphic Design</a></li>
-                                <li><a href="#">Lead Generation</a></li>
-                                <li><a href="#">Personal Portfolio</a></li>
-                                <li><a href="#">Web Design</a></li>
+                                <li><a href="/#services">Web Development</a></li>
+                                <li><a href="/#services">Mobile App Development</a></li>
+                                <li><a href="/#services">Software Development</a></li>
+                                <li><a href="/#services">Machine Learning &amp; Training</a></li>
                               </ul>
                             </div>
                             <div className="inner-blockss">
-                              <label className="menu-headings">One-Page Demo</label>
+                              <label className="menu-headings">UI/UX</label>
                               <ul className="menu-li-link">
-                                <li><a href="/app-development">App Development</a></li>
-                                <li><a href="/">Creative Agency</a></li>
-                                <li><a href="#">Digital Agency</a></li>
-                                <li><a href="#">Graphic Design</a></li>
-                                <li><a href="#">Lead Generation</a></li>
-                                <li><a href="#">Personal Portfolio</a></li>
-                                <li><a href="#">Web Design</a></li>
+                                <li><a href="/#services">UI/UX Design</a></li>
                               </ul>
                             </div>
                             <div className="inner-blockss">
-                              <label className="menu-headings">Coming Soon Demo</label>
+                              <label className="menu-headings">Hardware &amp; Infrastructure</label>
                               <ul className="menu-li-link">
-                                <li><a href="#." className="dsbld">Corporate Business</a></li>
-                                <li><a href="#." className="dsbld">Product Landing Page</a></li>
-                                <li><a href="#." className="dsbld">Photography</a></li>
-                                <li><a href="#." className="dsbld">Domain &amp; Hosting</a></li>
-                                <li><a href="#." className="dsbld">E-commerce</a></li>
-                                <li><a href="#." className="dsbld">Business Development</a></li>
+                                <li><a href="/#services">Rack Installation</a></li>
                               </ul>
                             </div>
                             <div className="inner-blockss">
@@ -81,97 +70,25 @@ export default function Header({ dark = true }: { dark?: boolean }) {
                   <MenuExtraInfo />
                 </div>
               </li>
-              <li className="megamenu">
-                <a href="#" className="menu-links">Pages</a>
-                <div className="menu-dropdown">
-                  <div className="menu-block-set">
-                    <div className="container">
-                      <div className="menu-block-a">
-                        <div className="mega-menu-blocks">
-                          <p className="demoted-h4">Creative, Premium &amp; Scalable Solutions For App and Web Development</p>
-                          <a href="#contact" className="ree-btn ree-btn0 ree-btn-grdt2 mt30">
-                            {" "}
-                            Request Quote <i className="fas fa-arrow-right fa-btn"></i>
-                          </a>
-                        </div>
-                        <div className="mega-menu-blocks">
-                          <div className="menu-inner-block-a">
-                            <div className="inner-blockss">
-                              <ul className="menu-li-link">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">About Us - 2</a></li>
-                                <li><a href="#">Career</a></li>
-                                <li><a href="#">Career - 2</a></li>
-                                <li><a href="#">Case Study</a></li>
-                              </ul>
-                            </div>
-                            <div className="inner-blockss">
-                              <ul className="menu-li-link">
-                                <li><a href="#">Case Study Details</a></li>
-                                <li><a href="#">Our Core Value</a></li>
-                                <li><a href="#contact">Contact Us</a></li>
-                                <li><a href="#contact">Contact Us - 2</a></li>
-                                <li><a href="#">Our Team</a></li>
-                              </ul>
-                            </div>
-                            <div className="inner-blockss">
-                              <ul className="menu-li-link">
-                                <li><a href="#">Our Team - 2</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Pricing - 2</a></li>
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Service - 2</a></li>
-                              </ul>
-                            </div>
-                            <div className="inner-blockss">
-                              <ul className="menu-li-link">
-                                <li><a href="#">Service Details</a></li>
-                                <li><a href="#">Service Details - 2</a></li>
-                                <li><a href="#">Why Choose Us</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <MenuExtraInfo />
-                </div>
+              <li>
+                <a href="/portfolio" className="menu-links">Portfolio</a>
               </li>
-              <li className="megamenu mega-small">
-                <a href="#" className="menu-links">Portfolio</a>
-                <div className="menu-dropdown">
-                  <div className="menu-block-set">
-                    <a className="dropdown-item" href="#portfolio">Portfolio Modern</a>
-                    <a className="dropdown-item" href="#portfolio">Portfolio 3 Grid</a>
-                    <a className="dropdown-item" href="#portfolio">Portfolio 4 Grid</a>
-                    <a className="dropdown-item" href="#portfolio">Portfolio Details</a>
-                    <a className="dropdown-item" href="#portfolio">Portfolio Details - 2</a>
-                  </div>
-                </div>
-              </li>
-              <li className="megamenu mega-small">
-                <a href="#" className="menu-links">Contact Us</a>
-                <div className="menu-dropdown">
-                  <div className="menu-block-set">
-                    <a className="dropdown-item" href="#contact">Contact Us</a>
-                    <a className="dropdown-item" href="#contact">Contact Us - 2</a>
-                  </div>
-                </div>
+              <li>
+                <a href="/contact" className="menu-links">Contact Us</a>
               </li>
             </ul>
           </div>
           <div className="ree-nav-cta">
             <ul>
               <li>
-                <a href="#contact" className="ree-btn ree-btn0 ree-btn-grdt2 no-shadows"> Request Quote</a>
+                <a href="/contact" className="ree-btn ree-btn0 ree-btn-grdt2 no-shadows"> Request Quote</a>
               </li>
             </ul>
           </div>
           <div className="mobile-menu2">
             <ul className="mob-nav2">
               <li>
-                <a href="#contact" className="ree-btn2 ree-btn-grdt1"><i className="fas fa-envelope-open-text"></i></a>
+                <a href="/contact" className="ree-btn2 ree-btn-grdt1"><i className="fas fa-envelope-open-text"></i></a>
               </li>
               <li className="navm-">
                 <a className="toggle" href="#"> <span></span> </a>
@@ -181,73 +98,39 @@ export default function Header({ dark = true }: { dark?: boolean }) {
           <nav id="main-nav">
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
                 <ul>
                   <li>
-                    <a href="#">Multi-Page Demo</a>
+                    <a href="#">Development</a>
                     <ul>
-                      <li><a href="/app-development">App Development</a></li>
-                      <li><a href="/">Creative Agency</a></li>
-                      <li><a href="#">Digital Agency</a></li>
-                      <li><a href="#">Graphic Design</a></li>
-                      <li><a href="#">Lead Generation</a></li>
-                      <li><a href="#">Personal Portfolio</a></li>
-                      <li><a href="#">Web Design</a></li>
+                      <li><a href="/#services">Web Development</a></li>
+                      <li><a href="/#services">Mobile App Development</a></li>
+                      <li><a href="/#services">Software Development</a></li>
+                      <li><a href="/#services">Machine Learning &amp; Training</a></li>
                     </ul>
                   </li>
                   <li>
-                    <a href="#">One-Page Demo</a>
+                    <a href="#">UI/UX</a>
                     <ul>
-                      <li><a href="/app-development">App Development</a></li>
-                      <li><a href="/">Creative Agency</a></li>
-                      <li><a href="#">Digital Agency</a></li>
-                      <li><a href="#">Graphic Design</a></li>
-                      <li><a href="#">Lead Generation</a></li>
-                      <li><a href="#">Personal Portfolio</a></li>
-                      <li><a href="#">Web Design</a></li>
+                      <li><a href="/#services">UI/UX Design</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Hardware &amp; Infrastructure</a>
+                    <ul>
+                      <li><a href="/#services">Rack Installation</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#">Pages</a>
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">About Us - 2</a></li>
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Career - 2</a></li>
-                  <li><a href="#">Case Study</a></li>
-                  <li><a href="#">Case Study Details</a></li>
-                  <li><a href="#">Our Core Value</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
-                  <li><a href="#contact">Contact Us - 2</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Our Team - 2</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Pricing - 2</a></li>
-                  <li><a href="#">Service</a></li>
-                  <li><a href="#">Service - 2</a></li>
-                  <li><a href="#">Service Details</a></li>
-                  <li><a href="#">Service Details - 2</a></li>
-                  <li><a href="#">Why Choose Us</a></li>
-                </ul>
+                <a href="/portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
-                <ul>
-                  <li><a href="#portfolio">Portfolio Modern</a></li>
-                  <li><a href="#portfolio">Portfolio 3 Grid</a></li>
-                  <li><a href="#portfolio">Portfolio 4 Grid</a></li>
-                  <li><a href="#portfolio">Portfolio Details</a></li>
-                  <li><a href="#portfolio">Portfolio Details - 2</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#contact">Contact Page</a>
-                <ul>
-                  <li><a href="#contact">Contact Us</a></li>
-                  <li><a href="#contact">Contact Us - 2</a></li>
-                </ul>
+                <a href="/contact">Contact Us</a>
               </li>
             </ul>
             <ul className="bottom-nav">

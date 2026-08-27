@@ -8,22 +8,22 @@ const services = [
     href: "#services",
     img: "/images/others/service-1.jpg",
     kicker: "Development",
-    title: "Web Design & Development",
-    tags: ["HTML", "PHP", ".NET", "WORDPRESS"],
+    title: "Web, Mobile & Software Development",
+    tags: ["WEB", "MOBILE", "SOFTWARE", "ML & TRAINING"],
   },
   {
     href: "#services",
     img: "/images/others/service-2.jpg",
-    kicker: "Design",
-    title: "UI/UX Design & Graphic Designg",
-    tags: ["ANDROID", "iOS", "PHONEGAP", "WEB API"],
+    kicker: "Integration",
+    title: "EDI & Warehouse Systems Integration",
+    tags: ["EDI", "WMS", "MIDDLEWARE"],
   },
   {
     href: "#services",
     img: "/images/others/service-3.jpg",
-    kicker: "Marketing",
-    title: "Marketing Campaigns & Content Creation",
-    tags: ["SEO", "SMO", "PPC", "EMAIL", "CONTENT"],
+    kicker: "Infrastructure",
+    title: "Server, Network & Rack Infrastructure",
+    tags: ["RACKS", "NETWORKING", "IT SUPPORT"],
   },
 ];
 
@@ -56,7 +56,7 @@ export default function Services() {
   });
 
   return (
-    <div className="creative-service dark-deep" id="services">
+    <div className="creative-service r-bg-x" id="services">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

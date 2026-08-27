@@ -4,13 +4,30 @@ import { useRef } from "react";
 import { useOwlCarousel } from "@/hooks/useOwlCarousel";
 
 const items = [
-  { img: "/images/portfolio/portfolio-1.jpg", title: "Creative and minimal clothing label design" },
-  { img: "/images/portfolio/portfolio-2.jpg", title: "Creative business card design service" },
-  { img: "/images/portfolio/portfolio-3.jpg", title: "Furniture ios app kit design development" },
-  { img: "/images/portfolio/portfolio-2.jpg", title: "Furniture ios app kit design development" },
-  { img: "/images/portfolio/portfolio-2.jpg", title: "Creative business card design service" },
-  { img: "/images/portfolio/portfolio-3.jpg", title: "Furniture ios app kit design development" },
-  { img: "/images/portfolio/portfolio-2.jpg", title: "Furniture ios app kit design development" },
+  {
+    img: "/images/ourfinestwork1.jpg",
+    bg: "#15161B",
+    title: "EDI Integration — Infor WMS ↔ Company",
+    tags: "Middleware, EDI, System Integration",
+  },
+  {
+    img: "/images/ourfinestwork2.jpg",
+    bg: "#F5F2DF",
+    title: "WIMS — Warehouse Inventory Management",
+    tags: "Invoicing, Billing, Palleting, UOM",
+  },
+  {
+    img: "/images/ourfinestwork3.jpg",
+    bg: "#FBFCF7",
+    title: "Server Rack Maintenance",
+    tags: "Switches, Firewalls, Access Points",
+  },
+  {
+    img: "/images/ourfinestwork4.jpg",
+    bg: "#131F37",
+    title: "Server Installation & IT Support",
+    tags: "Active Directory, Networking, Desktop & L3 Support",
+  },
 ];
 
 export default function Portfolio() {
@@ -59,17 +76,30 @@ export default function Portfolio() {
         <div className="row mt60">
           <div className="col-lg-12 vcenter">
             <div className="full-work-app owl-nv owl-carousel" ref={ref}>
-              {items.map((it, i) => (
-                <div className="fwb-main-x fwb-a" key={i}>
+              {items.map((it) => (
+                <div className="fwb-main-x fwb-a" key={it.title}>
                   <div className="work-thumbnails">
-                    <a href="#portfolio">
-                      <img src={it.img} alt="portfolio auratech" className="img-fluid" loading="lazy" />
+                    <a href="/contact">
+                      <div
+                        style={{
+                          width: "100%",
+                          aspectRatio: "4 / 3",
+                          background: it.bg,
+                        }}
+                      >
+                        <img
+                          src={it.img}
+                          alt={it.title}
+                          loading="lazy"
+                          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                        />
+                      </div>
                     </a>
                   </div>
                   <div className="work-details">
-                    <p className="mb10">UX, UI, Graphic Design</p>
+                    <p className="mb10">{it.tags}</p>
                     <h4>
-                      <a href="#portfolio">{it.title}</a>
+                      <a href="/contact">{it.title}</a>
                     </h4>
                   </div>
                 </div>
@@ -81,8 +111,8 @@ export default function Portfolio() {
           <div className="col-lg-10">
             <div className="cta-heading-wide-bt">
               <h3 className="w-txt">Take a look of our quality work</h3>
-              <a href="#portfolio" className="ree-btn ree-btn-grdt1 mw-80 no-shadows">
-                View All Work <i className="fas fa-arrow-right fa-btn"></i>
+              <a href="/contact" className="ree-btn ree-btn-grdt1 mw-80 no-shadows">
+                Get In Touch <i className="fas fa-arrow-right fa-btn"></i>
               </a>
             </div>
           </div>

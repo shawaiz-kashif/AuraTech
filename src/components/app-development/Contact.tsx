@@ -1,11 +1,10 @@
 const interests = [
-  "Web Design",
-  "Graphic Design",
-  "App Development",
-  "E-commerce Development",
-  "Digital Marketing",
-  "Business Growth",
-  "Business Startup",
+  "Web Development",
+  "Mobile App Development",
+  "Software Development",
+  "Machine Learning & Training",
+  "UI/UX Design",
+  "Rack Installation",
   "Other...",
 ];
 
@@ -33,43 +32,29 @@ export default function Contact() {
             <div className="home-contact-block">
               <div className="contact-infos">
                 <div className="c-infot">
-                  <span>Sales Department</span>{" "}
-                  <a href="tel:+911234567890">
-                    <i className="fas fa-phone-alt"></i> +91 123 4567 890
+                  <span>Software Department</span>
+                  <a href="tel:+923212522077">
+                    <i className="fas fa-phone-alt"></i> +92 321 2522 077
                   </a>
                 </div>
                 <div className="c-infot">
-                  <span>HR Department</span>{" "}
-                  <a href="tel:+911234567890">
-                    <i className="fas fa-phone-alt"></i> +91 123 4567 890
+                  <span>IT Department</span>
+                  <a href="tel:+923212522077">
+                    <i className="fas fa-phone-alt"></i> +92 321 2522 077
                   </a>
                 </div>
               </div>
               <div className="contact-infos mt35">
                 <div className="c-infot">
-                  <span>Sales Department</span>{" "}
+                  <span>Software Department</span>
                   <a href="mailto:info@auratech-solutions.com">
                     <i className="fas fa-envelope"></i> info@auratech-solutions.com
                   </a>
                 </div>
                 <div className="c-infot">
-                  <span>Connect on Skype</span>{" "}
+                  <span>Connect on Skype</span>
                   <a href="skype:auratech.solutions">
                     <i className="fab fa-skype"></i> auratech.solutions
-                  </a>
-                </div>
-              </div>
-              <div className="live-review- mt60">
-                <span>Read Our Customers Feedback</span>
-                <div className="livrve">
-                  <a href="#">
-                    <img src="/images/icons/google-logo.svg" alt="review" />
-                  </a>
-                  <a href="#">
-                    <img src="/images/icons/hubspot-logo.svg" alt="review" />
-                  </a>
-                  <a href="#">
-                    <img src="/images/icons/trustpilot-logo.svg" alt="review" />
                   </a>
                 </div>
               </div>
@@ -79,7 +64,10 @@ export default function Contact() {
             <div className="form-contact-hom fourc-up-b">
               <div className="form-block">
                 <div className="form-head">
-                  <h3>Please fill in the form below.</h3>
+                  <h3>
+                    Share your idea or <br />
+                    requirement with our experts
+                  </h3>
                 </div>
                 <div className="form-body">
                   <form action="#" method="post" name="feedback-form">

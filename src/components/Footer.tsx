@@ -1,17 +1,22 @@
 const socialIcons = ["twitter", "facebook-f", "youtube", "linkedin-in", "instagram"];
 
-const companyLinks = ["About us", "Portfolio", "Contact Us", "Faqs", "Privacy & Policy"];
-
-const serviceLinks = [
-  "Hire Dedicated Developers",
-  "Web App Development",
-  "Mobile App Development",
-  "Search Engine Optimization",
-  "Pay-Per-Click",
-  "Social Media Marketing",
+const companyLinks = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/#services" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
-const industryLinks = ["Healthcare", "Education", "Retail", "Logistics", "Oil & Gas", "Music & Video"];
+const serviceLinks = [
+  "Web Development",
+  "Mobile App Development",
+  "Software Development",
+  "Machine Learning & Training",
+  "UI/UX Design",
+  "Rack Installation",
+];
+
+const legalLinks = ["Privacy & Policy", "Terms & Conditions", "Careers"];
 
 export default function Footer() {
   return (
@@ -27,7 +32,10 @@ export default function Footer() {
                     <img src="/AuraTechlogo.png" alt="AuraTech" className="img" loading="lazy" />
                   </a>
                 </div>
-                <p className="mt15">Overall client rating is 4.9 out of 8,500 Clients for AuraTech</p>
+                <p className="mt15">
+                  Software and hardware solutions — development, systems integration, and IT
+                  infrastructure, under one team.
+                </p>
                 <ul className="footer_social mt30">
                   {socialIcons.map((icon) => (
                     <li key={icon}>
@@ -37,8 +45,8 @@ export default function Footer() {
                     </li>
                   ))}
                 </ul>
-                <a href="#" className="ree-btn ree-btn-grdt1 mw-80 no-shadows mt40">
-                  Our Brochure <i className="fas fa-arrow-right fa-btn"></i>
+                <a href="/contact" className="ree-btn ree-btn-grdt1 mw-80 no-shadows mt40">
+                  Get In Touch <i className="fas fa-arrow-right fa-btn"></i>
                 </a>
               </div>
             </div>
@@ -46,13 +54,13 @@ export default function Footer() {
               <h5>For Work inquiry</h5>
               <ul className="footer-links-list social-linkz">
                 <li>
-                  <a href="tel:+911234567890">
-                    <span><i className="fas fa-phone-square-alt"></i></span> +91 123 4567 890
+                  <a href="tel:+923212522077">
+                    <span><i className="fas fa-phone-square-alt"></i></span> +92 321 2522 077
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/+911234567890">
-                    <span><i className="fab fa-whatsapp-square"></i></span> +91 123 4567 890
+                  <a href="https://wa.me/+923212522077">
+                    <span><i className="fab fa-whatsapp-square"></i></span> +92 321 2522 077
                   </a>
                 </li>
                 <li>
@@ -67,7 +75,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="skype:auratech.solutions">
-                    <span><i className="fab fa-skype"></i></span> auratech-skype
+                    <span><i className="fab fa-skype"></i></span> auratech.solutions
                   </a>
                 </li>
               </ul>
@@ -76,8 +84,8 @@ export default function Footer() {
               <h5>Company</h5>
               <ul className="footer-links-list">
                 {companyLinks.map((l) => (
-                  <li key={l}>
-                    <a href="javascript:void(0)">{l}</a>
+                  <li key={l.label}>
+                    <a href={l.href}>{l.label}</a>
                   </li>
                 ))}
               </ul>
@@ -87,15 +95,15 @@ export default function Footer() {
               <ul className="footer-links-list">
                 {serviceLinks.map((l) => (
                   <li key={l}>
-                    <a href="javascript:void(0)">{l}</a>
+                    <a href="/#services">{l}</a>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="col-5s">
-              <h5>Industries</h5>
+              <h5>Legal</h5>
               <ul className="footer-links-list">
-                {industryLinks.map((l) => (
+                {legalLinks.map((l) => (
                   <li key={l}>
                     <a href="javascript:void(0)">{l}</a>
                   </li>
@@ -108,17 +116,12 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-5">
               <div className="ft-copyright">
-                <p>We are tracking any intention of piracy.</p>
+                <p>Software &amp; Hardware Solutions.</p>
               </div>
             </div>
             <div className="col-lg-7">
               <div className="ft-copyright ft-r">
-                <p>
-                  Copyright © {new Date().getFullYear()} AuraTech. All rights reserved. Template By{" "}
-                  <a href="https://themeforest.net/user/rajesh-doot/portfolio" target="_blank" rel="noreferrer">
-                    Rajesh Doot
-                  </a>
-                </p>
+                <p>Copyright © {new Date().getFullYear()} AuraTech. All rights reserved.</p>
               </div>
             </div>
           </div>

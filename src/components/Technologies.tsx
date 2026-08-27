@@ -4,15 +4,14 @@ const techs = [
   { icon: "/images/icons/flutterio-icon.svg", label: "Flutter" },
   { icon: "/images/icons/java.svg", label: "Java" },
   { icon: "/images/icons/physics.svg", label: "React Native" },
-  { icon: "/images/icons/apple.svg", label: "Python" },
-  { icon: "/images/icons/java.svg", label: "Java" },
+  { icon: "/images/icons/cube.svg", label: "Python" },
   { icon: "/images/icons/swift.svg", label: "Swift" },
   { icon: "/images/icons/pwa.svg", label: "PWA" },
 ];
 
 export default function Technologies() {
   return (
-    <section className="dark-deep dark-bg sec-pad">
+    <section className="r-bg-x sec-pad">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
