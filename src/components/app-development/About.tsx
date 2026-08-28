@@ -17,14 +17,15 @@ export default function About() {
                 Apps Built <span className="ree-text rt40">Right</span>, From Design to Deployment
               </h2>
               <p className="mb15 demoted-h4-light">
-                Native, cross-platform, and web apps — backed by the same team that builds and
+                Native and cross-platform mobile apps — backed by the same team that builds and
                 supports your backend infrastructure.
               </p>
               <p>
-                AuraTech&apos;s app development team handles the full lifecycle: architecture,
-                UI/UX, native and cross-platform builds, API and backend integration, and
-                deployment. Because we also manage servers, networking, and enterprise systems
-                in-house, your app doesn&apos;t just launch — it stays supported.
+                AuraTech&apos;s mobile app development team handles the full lifecycle:
+                architecture, UI/UX, native and cross-platform builds, API and backend
+                integration, and deployment. Because we also manage servers, networking, and
+                enterprise systems in-house, your app doesn&apos;t just launch — it stays
+                supported.
               </p>
             </div>
           </div>

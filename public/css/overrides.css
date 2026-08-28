@@ -151,3 +151,55 @@ html {
   font-weight: 600;
   color: #30303c;
 }
+/* FontAwesome icon centered inside the .ree-card-img box, for service cards
+   that don't have a matching bundled svg icon asset. */
+.ree-card-icon-fa {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #cc4925;
+}
+/* Continuous infinite-scroll logo strip (tech stack, etc). The track renders
+   the item list four times back to back (so there's always a full extra
+   screen's worth of buffered content on wide viewports) and translates by
+   exactly one quarter of its total width, wrapping seamlessly with no gap. */
+.tech-marquee {
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.tech-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: tech-marquee-scroll 24s linear infinite;
+}
+.tech-marquee:hover .tech-marquee-track {
+  animation-play-state: paused;
+}
+.tech-marquee-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 0 55px;
+  flex: none;
+}
+.tech-marquee-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+  white-space: nowrap;
+}
+@keyframes tech-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}

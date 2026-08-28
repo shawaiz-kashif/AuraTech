@@ -2,14 +2,14 @@ const services = [
   {
     icon: "/images/icons/android.svg",
     title: "Android Development",
-    desc: "Native Android apps built with modern architecture, from first prototype to Play Store release.",
+    desc: "Native Android apps built with Kotlin and Java, tested on real devices before every release.",
     imgClass: "ree-card-img shadows",
     delay: "100",
   },
   {
     icon: "/images/icons/apple.svg",
     title: "iOS Development",
-    desc: "Native iOS apps built for App Store guidelines and long-term maintainability, not just launch day.",
+    desc: "Native iOS apps built to Apple's guidelines, from planning through App Store submission and beyond.",
     delay: "300",
   },
   {
@@ -32,8 +32,8 @@ const services = [
   },
   {
     icon: "/images/icons/app-development.svg",
-    title: "Web App Development",
-    desc: "Full-stack web applications — frontend, backend, and the APIs that connect them.",
+    title: "Testing & App Store Launch",
+    desc: "Real-device testing, App Store and Play Store submission, and the fixes that come after launch — not just the build.",
     delay: "1100",
   },
 ];

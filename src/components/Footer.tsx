@@ -8,12 +8,12 @@ const companyLinks = [
 ];
 
 const serviceLinks = [
-  "Web Development",
-  "Mobile App Development",
-  "Software Development",
-  "Machine Learning & Training",
-  "UI/UX Design",
-  "Rack Installation",
+  { label: "Web Development", href: "/web-development" },
+  { label: "Mobile App Development", href: "/app-development" },
+  { label: "Software Development", href: "/software-development" },
+  { label: "Machine Learning & Training", href: "/#services" },
+  { label: "UI/UX Design", href: "/#services" },
+  { label: "Rack Installation", href: "/#services" },
 ];
 
 const legalLinks = ["Privacy & Policy", "Terms & Conditions", "Careers"];
@@ -94,8 +94,8 @@ export default function Footer() {
               <h5>Services</h5>
               <ul className="footer-links-list">
                 {serviceLinks.map((l) => (
-                  <li key={l}>
-                    <a href="/#services">{l}</a>
+                  <li key={l.label}>
+                    <a href={l.href}>{l.label}</a>
                   </li>
                 ))}
               </ul>

@@ -11,7 +11,7 @@ export default function Preloader() {
     // (e.g. the Google Maps iframe in the contact section), and if one of
     // those is slow or blocked by an ad blocker/proxy, `load` never fires
     // and the preloader hangs forever.
-    const timer = setTimeout(() => setVisible(false), 400);
+    const timer = setTimeout(() => setVisible(false), 150);
     return () => clearTimeout(timer);
   }, []);
 

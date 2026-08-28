@@ -4,6 +4,8 @@
 export const BODY_THEME: Record<string, string> = {
   "/": "",
   "/app-development": "",
+  "/web-development": "",
+  "/software-development": "",
   "/portfolio": "",
   "/contact": "",
 };

@@ -1,7 +1,7 @@
 const points = [
-  { icon: "fas fa-mobile-alt", label: "Native & Cross-Platform", cls: "uca" },
-  { icon: "fab fa-app-store-ios", label: "iOS & Android", cls: "ucb" },
-  { icon: "fas fa-rocket", label: "Full Lifecycle Support", cls: "ucc" },
+  { icon: "fas fa-cubes", label: "Built Around Your Workflow", cls: "uca" },
+  { icon: "fas fa-exchange-alt", label: "Systems That Talk to Each Other", cls: "ucb" },
+  { icon: "fas fa-server", label: "Backed by Real Infrastructure", cls: "ucc" },
 ];
 
 export default function Hero() {
@@ -15,11 +15,11 @@ export default function Hero() {
                 <img src="/images/shape/svg_dot.svg" alt="shape" />
               </div>
               <h1 className="mb30 zup">
-                iOS &amp; Android App Development
+                Custom Software That Fits How You Work
               </h1>
               <p className="zup">
-                AuraTech designs and builds native and cross-platform mobile apps end-to-end —
-                from architecture and UI to App Store submission and the backend they run on.
+                AuraTech builds ERP, CRM, and CMS systems, plus the integrations that connect
+                them — software shaped around your business, not the other way around.
               </p>
 
               <div className="uniq-points mt40">
@@ -40,9 +40,10 @@ export default function Hero() {
           <div className="col-lg-6 vcenter">
             <div className="sol-image m-mt30">
               <img
-                src="/images/sliders/app-mockup.png"
-                alt="mobile app development"
+                src="/images/others/service-1.jpg"
+                alt="custom software development"
                 className="img-fluid"
+                style={{ borderRadius: "16px" }}
                 fetchPriority="high"
               />
             </div>

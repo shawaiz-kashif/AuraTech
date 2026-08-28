@@ -25,7 +25,7 @@ export default function Contact({ pullUp = true }: { pullUp?: boolean }) {
         <div className="row zup">
           <div className="col-right-a">
             <div className={`sec-heading${pullUp ? " fourc-up-a" : ""}`}>
-              <span className="sub-heading mb15">Inquiry</span>
+              <span className="sub-heading mb30">Inquiry</span>
               <h2>
                 Let&rsquo;s Get in <span className="ree-text rt40">Touch</span>
               </h2>

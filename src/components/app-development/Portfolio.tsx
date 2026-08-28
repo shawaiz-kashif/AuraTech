@@ -1,67 +1,24 @@
-"use client";
-
-import { useRef } from "react";
-import { useOwlCarousel } from "@/hooks/useOwlCarousel";
-
 const items = [
   {
-    img: "/images/ourfinestwork1.jpg",
-    bg: "#15161B",
-    title: "EDI Integration — Infor WMS ↔ Company",
-    tags: "Middleware, EDI, System Integration",
+    img: "/images/portfolio-mobile/grocery-app-2.jpg",
+    bg: "#f4f4f4",
+    title: "QuickMart — Grocery Shopping App",
+    tags: "Flutter, Firebase, Mobile Commerce",
+    href: "https://github.com/shawaiz-kashif/Flutter_grocery_app",
   },
   {
-    img: "/images/ourfinestwork2.jpg",
-    bg: "#F5F2DF",
-    title: "WIMS — Warehouse Inventory Management",
-    tags: "Invoicing, Billing, Palleting, UOM",
-  },
-  {
-    img: "/images/ourfinestwork3.jpg",
-    bg: "#FBFCF7",
-    title: "Server Rack Maintenance",
-    tags: "Switches, Firewalls, Access Points",
-  },
-  {
-    img: "/images/ourfinestwork4.jpg",
-    bg: "#131F37",
-    title: "Server Installation & IT Support",
-    tags: "Active Directory, Networking, Desktop & L3 Support",
+    img: "/images/portfolio-mobile/issue-ticketing.png",
+    bg: "#f4f4f4",
+    title: "Fault Desk — Issue Ticketing System",
+    tags: "Flutter, Supabase, Role-Based Access",
+    href: "https://github.com/shawaiz-kashif/Issue-Ticketing-System",
   },
 ];
 
 export default function Portfolio() {
-  const ref = useRef<HTMLDivElement>(null);
-  useOwlCarousel(ref, {
-    items: 4,
-    nav: true,
-    dots: false,
-    autoplay: false,
-    loop: true,
-    center: false,
-    margin: 20,
-    stagePadding: 90,
-    autoplayTimeout: 35000,
-    autoplayHoverPause: true,
-    autoHeight: true,
-    smartSpeed: 1000,
-    navText: [
-      "<i class='fas fa-chevron-left'></i>",
-      "<i class='fas fa-chevron-right'></i>",
-    ],
-    responsive: {
-      0: { items: 1, stagePadding: 40 },
-      520: { items: 1, stagePadding: 40 },
-      768: { items: 2 },
-      1200: { items: 3 },
-      1400: { items: 4 },
-      1600: { items: 4 },
-    },
-  });
-
   return (
     <section className="r-bg-f sec-pad" id="portfolio">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-sm-8 vcenter text-center">
             <div className="heading-hz-btn">
@@ -73,39 +30,33 @@ export default function Portfolio() {
           </div>
         </div>
         <h3 className="visually-hidden">Featured Work</h3>
-        <div className="row mt60">
-          <div className="col-lg-12 vcenter">
-            <div className="full-work-app owl-nv owl-carousel" ref={ref}>
-              {items.map((it) => (
-                <div className="fwb-main-x fwb-a" key={it.title}>
-                  <div className="work-thumbnails">
-                    <a href="/contact">
-                      <div
-                        style={{
-                          width: "100%",
-                          aspectRatio: "4 / 3",
-                          background: it.bg,
-                        }}
-                      >
-                        <img
-                          src={it.img}
-                          alt={it.title}
-                          loading="lazy"
-                          style={{ width: "100%", height: "100%", objectFit: "contain" }}
-                        />
-                      </div>
-                    </a>
-                  </div>
-                  <div className="work-details">
-                    <p className="mb10">{it.tags}</p>
-                    <h4>
-                      <a href="/contact">{it.title}</a>
-                    </h4>
-                  </div>
+        <div className="row mt60 justify-content-center">
+          {items.map((it) => (
+            <div className="col-lg-5 col-md-6" key={it.title}>
+              <div className="fwb-main-x fwb-a">
+                <div className="work-thumbnails">
+                  <a href={it.href} target="_blank" rel="noopener noreferrer">
+                    <div style={{ width: "100%", aspectRatio: "4 / 3", background: it.bg }}>
+                      <img
+                        src={it.img}
+                        alt={it.title}
+                        loading="lazy"
+                        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                      />
+                    </div>
+                  </a>
                 </div>
-              ))}
+                <div className="work-details">
+                  <p className="mb10">{it.tags}</p>
+                  <h4>
+                    <a href={it.href} target="_blank" rel="noopener noreferrer">
+                      {it.title}
+                    </a>
+                  </h4>
+                </div>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
         <div className="row justify-content-center text-center mt60">
           <div className="col-lg-10">
