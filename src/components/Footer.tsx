@@ -11,7 +11,6 @@ const serviceLinks = [
   { label: "Web Development", href: "/web-development" },
   { label: "Mobile App Development", href: "/app-development" },
   { label: "Software Development", href: "/software-development" },
-  { label: "Machine Learning & Training", href: "/#services" },
   { label: "UI/UX Design", href: "/#services" },
   { label: "Rack Installation", href: "/#services" },
 ];

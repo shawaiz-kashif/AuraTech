@@ -19,22 +19,16 @@ const services = [
     delay: "500",
   },
   {
-    icon: "/images/icons/smartwatch.svg",
-    title: "Machine Learning & Training",
-    desc: "Custom ML features built into your app, plus hands-on training to bring your team up to speed.",
-    delay: "700",
-  },
-  {
     icon: "/images/icons/ux-interface.svg",
     title: "UI/UX Designing",
     desc: "Interfaces designed around how people actually use your product, not just how it looks in a mockup.",
-    delay: "900",
+    delay: "700",
   },
   {
     icon: "/images/icons/app-development.svg",
     title: "Testing & App Store Launch",
     desc: "Real-device testing, App Store and Play Store submission, and the fixes that come after launch — not just the build.",
-    delay: "1100",
+    delay: "900",
   },
 ];
 

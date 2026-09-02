@@ -9,7 +9,7 @@ const services = [
     img: "/images/others/service-1.jpg",
     kicker: "Development",
     title: "Web, Mobile & Software Development",
-    tags: ["WEB", "MOBILE", "SOFTWARE", "ML & TRAINING"],
+    tags: ["WEB", "MOBILE", "SOFTWARE"],
   },
   {
     href: "#services",

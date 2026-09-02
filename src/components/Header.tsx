@@ -43,9 +43,7 @@ export default function Header({ dark = false }: { dark?: boolean }) {
                               <ul className="menu-li-link">
                                 <li><a href="/web-development">Web Development</a></li>
                                 <li><a href="/app-development">Mobile App Development</a></li>
-                                <li><a href="/software-development">Software Development</a></li>
-                                <li><a href="/#services">Machine Learning &amp; Training</a></li>
-                              </ul>
+                                <li><a href="/software-development">Software Development</a></li>                              </ul>
                             </div>
                             <div className="inner-blockss">
                               <label className="menu-headings">UI/UX</label>
@@ -109,7 +107,6 @@ export default function Header({ dark = false }: { dark?: boolean }) {
                       <li><a href="/web-development">Web Development</a></li>
                       <li><a href="/app-development">Mobile App Development</a></li>
                       <li><a href="/software-development">Software Development</a></li>
-                      <li><a href="/#services">Machine Learning &amp; Training</a></li>
                     </ul>
                   </li>
                   <li>

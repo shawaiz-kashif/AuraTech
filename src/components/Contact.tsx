@@ -2,7 +2,6 @@ const interests = [
   "Web Development",
   "Mobile App Development",
   "Software Development",
-  "Machine Learning & Training",
   "UI/UX Design",
   "Rack Installation",
   "Other...",
