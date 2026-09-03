@@ -4,7 +4,6 @@ import Services from "@/components/web-development/Services";
 import TechStack from "@/components/web-development/TechStack";
 import Portfolio from "@/components/web-development/Portfolio";
 import ClientPortals from "@/components/web-development/ClientPortals";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function WebDevelopment() {
@@ -16,7 +15,6 @@ export default function WebDevelopment() {
       <TechStack />
       <Portfolio />
       <ClientPortals />
-      <Contact />
       <Footer />
     </>
   );

@@ -203,3 +203,104 @@ html {
     transform: translateX(-25%);
   }
 }
+/* Standalone stats card for the About page (reuses .key-highlights' grid
+   for the numbers, but with its own orange background/padding since it
+   isn't nested inside the homepage's .quick-key-points wrapper). */
+.about-stats-card {
+  background: #ff5b2e;
+  padding: 40px 60px;
+  border-radius: 14px;
+}
+.about-stats-card .key-highlights {
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .about-stats-card {
+    padding: 30px;
+  }
+  .about-stats-card .key-highlights {
+    grid-template-columns: auto;
+    justify-items: center;
+    text-align: center;
+  }
+}
+/* About page "Method" section: sticky left heading, steps reveal on the
+   right as the reader scrolls past them (active step tracked via
+   IntersectionObserver in useActiveStep). */
+.about-method .method-sticky {
+  position: sticky;
+  top: 140px;
+}
+.about-method .method-steps {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+.about-method .method-steps:before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: #e5e0d8;
+}
+.about-method .method-step {
+  position: relative;
+  min-height: 34vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.35;
+  transition: opacity 0.5s ease;
+}
+.about-method .method-step:before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #d8d2c8;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+.about-method .method-step.is-active {
+  opacity: 1;
+}
+.about-method .method-step.is-active:before {
+  background: #cc4925;
+  border-color: #cc4925;
+}
+.about-method .method-step-num {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #cc4925;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.about-method .method-step p {
+  font-size: 22px;
+  line-height: 34px;
+  color: #30303c;
+  max-width: 560px;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .about-method .method-sticky {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .about-method .method-step {
+    min-height: 0;
+    padding: 20px 0;
+  }
+  .about-method .method-step p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

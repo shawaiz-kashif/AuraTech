@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Preloader from "@/components/Preloader";
 import BodyThemeClass from "@/components/BodyThemeClass";
+import SmoothScroll from "@/components/SmoothScroll";
 import { BODY_THEME } from "@/lib/pageThemes";
 
 export const metadata: Metadata = {
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           }}
         />
         <BodyThemeClass />
+        <SmoothScroll />
         <Preloader />
         {children}
         <Script src="/js/modernizr-3.5.0.min.js" strategy="beforeInteractive" />
