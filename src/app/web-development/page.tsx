@@ -4,6 +4,7 @@ import Services from "@/components/web-development/Services";
 import TechStack from "@/components/web-development/TechStack";
 import Portfolio from "@/components/web-development/Portfolio";
 import ClientPortals from "@/components/web-development/ClientPortals";
+import Faq from "@/components/web-development/Faq";
 import Footer from "@/components/Footer";
 import { pageMetadata } from "@/lib/seo";
 
@@ -23,6 +24,7 @@ export default function WebDevelopment() {
       <TechStack />
       <Portfolio />
       <ClientPortals />
+      <Faq />
       <Footer />
     </>
   );

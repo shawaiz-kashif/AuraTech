@@ -3,6 +3,7 @@ import Hero from "@/components/software-development/Hero";
 import Services from "@/components/software-development/Services";
 import TechStack from "@/components/software-development/TechStack";
 import Portfolio from "@/components/software-development/Portfolio";
+import Faq from "@/components/software-development/Faq";
 import Footer from "@/components/Footer";
 import { pageMetadata } from "@/lib/seo";
 
@@ -21,6 +22,7 @@ export default function SoftwareDevelopment() {
       <Services />
       <TechStack />
       <Portfolio />
+      <Faq />
       <Footer />
     </>
   );

@@ -57,6 +57,24 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
+              <div className="contact-infos mt35">
+                <div className="c-infot">
+                  <span>Based In</span>
+                  <div
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      background: "#fff",
+                      padding: "20px",
+                      borderRadius: "14px",
+                      width: "100%",
+                    }}
+                  >
+                    <i className="fas fa-map-marker-alt" style={{ marginRight: "10px" }}></i>
+                    Karachi, Pakistan
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-right-b">

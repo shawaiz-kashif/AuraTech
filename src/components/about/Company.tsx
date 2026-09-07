@@ -42,6 +42,13 @@ export default function Company() {
             </div>
           </div>
         </div>
+        <div className="row justify-content-center text-center mt40">
+          <div className="col-lg-9">
+            <a href="/#services" className="ree-btn ree-btn-grdt2 mw-80">
+              See What We Build <i className="fas fa-arrow-right fa-btn"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

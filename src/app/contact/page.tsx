@@ -1,8 +1,9 @@
 import Header from "@/components/Header";
 import PageBanner from "@/components/PageBanner";
 import Contact from "@/components/Contact";
+import Faq from "@/components/contact/Faq";
 import Footer from "@/components/Footer";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Contact Us",
@@ -11,9 +12,20 @@ export const metadata = pageMetadata({
   path: "/contact",
 });
 
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: `Contact Us | ${SITE_NAME}`,
+  url: `${SITE_URL}/contact`,
+};
+
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+      />
       <Header />
       <PageBanner
         kicker="Get In Touch"
@@ -22,6 +34,7 @@ export default function ContactPage() {
         image="/images/others/contact-desk.jpg"
       />
       <Contact />
+      <Faq />
       <Footer />
     </>
   );

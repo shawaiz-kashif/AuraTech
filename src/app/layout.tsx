@@ -13,12 +13,22 @@ const organizationSchema = {
   name: SITE_NAME,
   url: SITE_URL,
   logo: `${SITE_URL}/AuraTechlogo.png`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Karachi",
+    addressCountry: "PK",
+  },
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+92-321-2522077",
     email: "info@auratech-solutions.com",
     contactType: "customer service",
   },
+  founder: [
+    { "@type": "Person", name: "M. Shawaiz Kashif" },
+    { "@type": "Person", name: "M. Nafeel Haroon" },
+    { "@type": "Person", name: "M. Abeer Hamidi" },
+  ],
   makesOffer: [
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Web Development", url: `${SITE_URL}/web-development` } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mobile App Development", url: `${SITE_URL}/app-development` } },

@@ -6,6 +6,7 @@ import Portfolio from "@/components/app-development/Portfolio";
 import Technologies from "@/components/Technologies";
 import Testimonials from "@/components/app-development/Testimonials";
 import AppDownload from "@/components/app-development/AppDownload";
+import Faq from "@/components/app-development/Faq";
 import Footer from "@/components/Footer";
 import { pageMetadata } from "@/lib/seo";
 
@@ -27,6 +28,7 @@ export default function AppDevelopment() {
       <Technologies />
       <Testimonials />
       <AppDownload />
+      <Faq />
       <Footer />
     </>
   );
