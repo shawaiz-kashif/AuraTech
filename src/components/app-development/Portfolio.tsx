@@ -4,14 +4,14 @@ const items = [
     bg: "#f4f4f4",
     title: "QuickMart — Grocery Shopping App",
     tags: "Flutter, Firebase, Mobile Commerce",
-    href: "https://github.com/shawaiz-kashif/Flutter_grocery_app",
+    href: "/portfolio/quickmart",
   },
   {
     img: "/images/portfolio-mobile/issue-ticketing.png",
     bg: "#f4f4f4",
     title: "Fault Desk — Issue Ticketing System",
     tags: "Flutter, Supabase, Role-Based Access",
-    href: "https://github.com/shawaiz-kashif/Issue-Ticketing-System",
+    href: "/portfolio/fault-desk",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function Portfolio() {
             <div className="col-lg-5 col-md-6" key={it.title}>
               <div className="fwb-main-x fwb-a">
                 <div className="work-thumbnails">
-                  <a href={it.href} target="_blank" rel="noopener noreferrer">
+                  <a href={it.href}>
                     <div style={{ width: "100%", aspectRatio: "4 / 3", background: it.bg }}>
                       <img
                         src={it.img}
@@ -49,7 +49,7 @@ export default function Portfolio() {
                 <div className="work-details">
                   <p className="mb10">{it.tags}</p>
                   <h4>
-                    <a href={it.href} target="_blank" rel="noopener noreferrer">
+                    <a href={it.href}>
                       {it.title}
                     </a>
                   </h4>

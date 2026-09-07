@@ -6,6 +6,7 @@ type PortfolioItem = {
   icon?: string;
   bg?: string;
   fg?: string;
+  href?: string;
 };
 
 const items: PortfolioItem[] = [
@@ -14,12 +15,14 @@ const items: PortfolioItem[] = [
     bg: "#15161B",
     title: "EDI Integration — Infor WMS ↔ Company",
     tags: "Middleware, EDI, System Integration",
+    href: "/portfolio/edi-integration",
   },
   {
     img: "/images/ourfinestwork2.jpg",
     bg: "#F5F2DF",
     title: "WIMS — Warehouse Inventory Management",
     tags: "Invoicing, Billing, Palleting, UOM",
+    href: "/portfolio/wims-warehouse-management",
   },
   {
     img: "/images/ourfinestwork3.jpg",
@@ -58,7 +61,7 @@ export default function Portfolio({ contactHref = "#contact" }: { contactHref?: 
               key={it.title}
             >
               <div className="work-thumbnail">
-                <a href={contactHref}>
+                <a href={it.href ?? contactHref}>
                   {it.img ? (
                     <div
                       style={{
@@ -95,7 +98,7 @@ export default function Portfolio({ contactHref = "#contact" }: { contactHref?: 
               </div>
               <div className="port-title mt20">
                 <h4 className="mb5">
-                  <a href={contactHref}>{it.title}</a>
+                  <a href={it.href ?? contactHref}>{it.title}</a>
                 </h4>
                 <p>{it.tags}</p>
               </div>

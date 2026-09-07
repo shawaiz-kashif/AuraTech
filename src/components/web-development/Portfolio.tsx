@@ -32,13 +32,13 @@ const items = [
     img: "/images/portfolio-web/solesavvy.jpg",
     title: "SoleSavvy — E-Commerce Storefront",
     tags: "E-Commerce, Frontend, UI/UX",
-    href: "https://shawaiz-kashif.github.io/SoleSavvy/",
+    href: "/portfolio/solesavvy",
   },
   {
     img: "/images/portfolio-web/grocery-rbac.jpg",
     title: "Grocery Store RBAC Dashboard",
     tags: "Flask, SQL Server, Role-Based Access Control",
-    href: "https://shawaiz-kashif.github.io/grocery-store-rbac-dashboard/",
+    href: "/portfolio/grocery-rbac-dashboard",
   },
 ];
 
@@ -90,7 +90,11 @@ export default function Portfolio() {
               {items.map((it) => (
                 <div className="fwb-main-x fwb-a" key={it.title}>
                   <div className="work-thumbnails">
-                    <a href={it.href} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={it.href}
+                      target={it.href.startsWith("http") ? "_blank" : undefined}
+                      rel={it.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    >
                       <div style={{ width: "100%", aspectRatio: "4 / 3" }}>
                         <img
                           src={it.img}
@@ -104,7 +108,11 @@ export default function Portfolio() {
                   <div className="work-details">
                     <p className="mb10">{it.tags}</p>
                     <h4>
-                      <a href={it.href} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={it.href}
+                        target={it.href.startsWith("http") ? "_blank" : undefined}
+                        rel={it.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      >
                         {it.title}
                       </a>
                     </h4>

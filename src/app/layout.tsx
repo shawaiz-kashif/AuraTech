@@ -5,10 +5,34 @@ import Preloader from "@/components/Preloader";
 import BodyThemeClass from "@/components/BodyThemeClass";
 import SmoothScroll from "@/components/SmoothScroll";
 import { BODY_THEME } from "@/lib/pageThemes";
+import { SITE_NAME, SITE_URL } from "@/lib/seo";
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/AuraTechlogo.png`,
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+92-321-2522077",
+    email: "info@auratech-solutions.com",
+    contactType: "customer service",
+  },
+  makesOffer: [
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Web Development", url: `${SITE_URL}/web-development` } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mobile App Development", url: `${SITE_URL}/app-development` } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Software Development", url: `${SITE_URL}/software-development` } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "UI/UX Design", url: `${SITE_URL}/#services` } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rack Installation", url: `${SITE_URL}/#services` } },
+  ],
+};
 
 export const metadata: Metadata = {
-  title: "AuraTech - Software & Hardware Solutions",
-  description: "AuraTech Software & Hardware Solutions",
+  metadataBase: new URL(SITE_URL),
+  title: "AuraTech | Software & Hardware Solutions Company",
+  description:
+    "Custom software, systems integration, and IT infrastructure — built and supported by one team, not three vendors.",
   keywords: "Software Solutions, Hardware Solutions, App Development, Web Design",
   manifest: "/site.webmanifest",
   // favicon.ico and apple-icon.png in src/app are picked up automatically
@@ -20,6 +44,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className="no-js" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#e8f1ff" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <link href="/css/preloader.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

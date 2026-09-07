@@ -1,7 +1,7 @@
 const stats = [
   { value: "40", suffix: "+", label: "Projects Delivered" },
-  { value: "15", suffix: "+", label: "Enterprise Clients" },
-  { value: "12", suffix: "+", label: "Team Members" },
+  { value: "8", suffix: "", label: "Enterprise Clients" },
+  { value: "3", suffix: "", label: "Team Members" },
   { value: "5", suffix: "+", label: "Years of Experience" },
 ];
 
@@ -27,6 +27,10 @@ export default function About() {
                 keep it all running. From development through deployment to day-to-day IT
                 support, we handle the technology so you can focus on your business.
               </p>
+              <p className="mt15">
+                Our work spans warehouse &amp; logistics operations, enterprise systems
+                integration, and general IT infrastructure support.
+              </p>
             </div>
           </div>
         </div>
@@ -38,7 +42,7 @@ export default function About() {
             <div className="row key-and-award">
               <div className="ree-app-st-a flx-end m-order2">
                 <div className="btnctm">
-                  <a href="#about" className="ree-btn ree-btn-grdt3 mw-80 m-mt30">
+                  <a href="/about" className="ree-btn ree-btn-grdt3 mw-80 m-mt30">
                     Know More AuraTech <i className="fas fa-arrow-right fa-btn"></i>
                   </a>
                 </div>

@@ -1,7 +1,7 @@
 const stats = [
   { value: "40", suffix: "+", label: "Projects Delivered" },
-  { value: "15", suffix: "+", label: "Enterprise Clients" },
-  { value: "12", suffix: "+", label: "Team Members" },
+  { value: "8", suffix: "", label: "Enterprise Clients" },
+  { value: "3", suffix: "", label: "Team Members" },
   { value: "5", suffix: "+", label: "Years of Experience" },
 ];
 

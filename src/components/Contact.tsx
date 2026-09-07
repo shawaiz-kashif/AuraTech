@@ -7,7 +7,7 @@ const interests = [
   "Other...",
 ];
 
-export default function Contact({ pullUp = true }: { pullUp?: boolean }) {
+export default function Contact() {
   return (
     <section
       className="home-contact pb120"
@@ -16,14 +16,13 @@ export default function Contact({ pullUp = true }: { pullUp?: boolean }) {
           "linear-gradient(rgba(11,11,15,.85), rgba(11,11,15,.85)), url(/images/others/office.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        ...(pullUp ? {} : { marginTop: 0, paddingTop: "70px" }),
       }}
       id="contact"
     >
       <div className="container">
         <div className="row zup">
           <div className="col-right-a">
-            <div className={`sec-heading${pullUp ? " fourc-up-a" : ""}`}>
+            <div className="sec-heading fourc-up-a">
               <span className="sub-heading mb30">Inquiry</span>
               <h2>
                 Let&rsquo;s Get in <span className="ree-text rt40">Touch</span>
@@ -61,7 +60,7 @@ export default function Contact({ pullUp = true }: { pullUp?: boolean }) {
             </div>
           </div>
           <div className="col-right-b">
-            <div className={`form-contact-hom${pullUp ? " fourc-up-b" : ""}`}>
+            <div className="form-contact-hom fourc-up-b">
               <div className="form-block">
                 <div className="form-head">
                   <h3>

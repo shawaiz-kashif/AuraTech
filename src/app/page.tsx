@@ -5,8 +5,17 @@ import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
 import Technologies from "@/components/Technologies";
 import Testimonials from "@/components/Testimonials";
+import Faq from "@/components/Faq";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Software & Hardware Solutions Company",
+  description:
+    "Custom software, systems integration, and IT infrastructure — built and supported by one team, not three vendors.",
+  path: "/",
+});
 
 export default function Home() {
   return (
@@ -18,6 +27,7 @@ export default function Home() {
       <Portfolio />
       <Technologies />
       <Testimonials />
+      <Faq />
       <Contact />
       <Footer />
     </>

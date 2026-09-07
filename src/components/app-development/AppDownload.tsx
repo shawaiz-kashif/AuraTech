@@ -16,7 +16,7 @@ export default function AppDownload() {
                 <a href="/contact" className="ree-btn ree-btn-grdt1 mr20">
                   Start Your Project <i className="fas fa-arrow-right ml10"></i>
                 </a>
-                <a href="/portfolio" className="ree-btn ree-btn-grdt2 mr20">
+                <a href="#portfolio" className="ree-btn ree-btn-grdt2 mr20">
                   View Our Work <i className="fas fa-arrow-right ml10"></i>
                 </a>
               </div>
