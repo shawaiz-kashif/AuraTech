@@ -26,7 +26,6 @@ export default function ProcureToPayPage() {
         "Purchase type classification (goods vs. services, and combinations)",
         "Per-user view scoped to what they've submitted or need to action",
       ]}
-      githubUrl="https://github.com/CSC-P2P/P2P"
     />
   );
 }

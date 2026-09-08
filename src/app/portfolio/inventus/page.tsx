@@ -25,7 +25,6 @@ export default function InventusPage() {
         "Searchable, sortable, resizable columns across the entire fleet",
         "Admin view for managing inventory across the organization",
       ]}
-      githubUrl="https://github.com/CSC-P2P/AssetInventory"
     />
   );
 }

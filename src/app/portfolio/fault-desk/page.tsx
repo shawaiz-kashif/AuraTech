@@ -29,7 +29,6 @@ export default function FaultDeskPage() {
         "Row-Level Security on the database so access is scoped by role",
       ]}
       techStack={["Flutter", "Dart", "Supabase", "EmailJS"]}
-      githubUrl="https://github.com/shawaiz-kashif/Issue-Ticketing-System"
     />
   );
 }

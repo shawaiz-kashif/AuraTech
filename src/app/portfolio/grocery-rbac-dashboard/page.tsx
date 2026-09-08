@@ -26,7 +26,6 @@ export default function GroceryRbacPage() {
         "Reporting for sales and business performance analysis",
       ]}
       techStack={["Flask", "Python", "SQL Server", "pyodbc", "HTML/CSS/JavaScript"]}
-      githubUrl="https://github.com/shawaiz-kashif/grocery-store-rbac-dashboard"
     />
   );
 }

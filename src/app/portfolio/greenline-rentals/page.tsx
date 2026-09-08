@@ -27,7 +27,6 @@ export default function GreenlineRentalsPage() {
         "Role-based administration and reporting",
       ]}
       techStack={["Next.js"]}
-      githubUrl="https://github.com/Rental-System-m/rental-next"
     />
   );
 }

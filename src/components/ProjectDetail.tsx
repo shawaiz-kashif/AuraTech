@@ -11,7 +11,6 @@ export type ProjectDetailProps = {
   overview: string[];
   features: string[];
   techStack?: string[];
-  githubUrl: string;
 };
 
 export default function ProjectDetail({
@@ -23,7 +22,6 @@ export default function ProjectDetail({
   overview,
   features,
   techStack,
-  githubUrl,
 }: ProjectDetailProps) {
   return (
     <>
@@ -121,14 +119,6 @@ export default function ProjectDetail({
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
-              <a
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ree-btn ree-btn-grdt1 mw-80 mr20 mt20"
-              >
-                View Source Code <i className="fab fa-github fa-btn"></i>
-              </a>
               <a href="/contact" className="ree-btn ree-btn-grdt2 mw-80 mt20">
                 Talk to Us About Your Project <i className="fas fa-arrow-right fa-btn"></i>
               </a>

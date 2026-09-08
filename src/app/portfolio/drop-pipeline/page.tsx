@@ -26,7 +26,6 @@ export default function DropPipelinePage() {
         "Run history with the ability to re-run a job on demand",
         "Aging report and storage detail views for the underlying data",
       ]}
-      githubUrl="https://github.com/CSC-P2P/D.R.O.P"
     />
   );
 }

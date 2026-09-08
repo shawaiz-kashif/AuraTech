@@ -25,7 +25,6 @@ export default function SoleSavvyPage() {
         "Customer testimonials and service-highlight sections",
         "Newsletter signup and contact/about pages",
       ]}
-      githubUrl="https://github.com/shawaiz-kashif/SoleSavvy"
     />
   );
 }

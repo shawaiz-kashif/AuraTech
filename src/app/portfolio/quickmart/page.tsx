@@ -27,7 +27,6 @@ export default function QuickMartPage() {
         "Cart, favorites, and account navigation from a persistent bottom nav",
       ]}
       techStack={["Flutter", "Dart", "Firebase"]}
-      githubUrl="https://github.com/shawaiz-kashif/Flutter_grocery_app"
     />
   );
 }
